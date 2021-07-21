@@ -5,7 +5,7 @@ import Button from './Button';
 import AboutImg from '../assets/images/about-sec-img.jpg';
 
 const AboutSectionStyle = styled.div`
-  padding: 10rem;
+  padding: 5rem;
   .container {
     display: flex;
     align-items: center;

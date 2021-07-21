@@ -52,7 +52,7 @@ const HeroStyle = styled.div`
   .hero-scroll-down {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     position: absolute;
     bottom: 20px;
     width: 50px;
@@ -101,7 +101,10 @@ const HeroStyle = styled.div`
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
-      transform: translateY(50px);
+      transform: translateY(-50px);
+    }
+    canvas.tsparticles-canvas-el {
+      z-index: 1;
     }
     .hero-heading {
       font-size: 1.4rem;

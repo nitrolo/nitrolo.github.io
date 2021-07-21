@@ -23,7 +23,7 @@ const ButtonStyle = styled.div`
 
 function Button({ btnLink = 'Link', btnText = 'Button', fill = true }) {
   return (
-    <ButtonStyle fill={fill}>
+    <ButtonStyle fill={fill} className="button-wrapper">
       <Link className="button" to={btnLink}>
         {btnText}
       </Link>

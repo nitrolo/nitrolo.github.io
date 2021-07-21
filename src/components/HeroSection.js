@@ -43,6 +43,7 @@ const HeroStyle = styled.div`
   }
   .hero-info {
     margin-top: -18rem;
+    position: relative;
   }
   .typed-text {
     font-size: 2.5rem;
@@ -96,15 +97,11 @@ const HeroStyle = styled.div`
   canvas.tsparticles-canvas-el {
     position: absolute;
     top: 0;
-    z-index: -1;
   }
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
       transform: translateY(-50px);
-    }
-    canvas.tsparticles-canvas-el {
-      z-index: 1;
     }
     .hero-heading {
       font-size: 1.4rem;
@@ -140,7 +137,7 @@ const HeroStyle = styled.div`
     .hero-scroll-down {
       right: 0;
       width: 20px;
-      gap: 2rem;
+      gap: 1rem;
       p {
         font-size: 1.3rem;
       }
@@ -152,33 +149,35 @@ function HeroSection() {
   return (
     <HeroStyle>
       <div className="hero">
-        <Particles
-          params={{
-            particles: {
-              number: {
-                value: 10,
-                density: {
+        <>
+          <Particles
+            params={{
+              particles: {
+                number: {
+                  value: 10,
+                  density: {
+                    enable: true,
+                    value_area: 900,
+                  },
+                },
+                shape: {
+                  type: 'polygon',
+                  stroke: {
+                    width: 4,
+                    color: '#ff0080',
+                  },
+                },
+                line_linked: {
                   enable: true,
-                  value_area: 900,
-                },
-              },
-              shape: {
-                type: 'polygon',
-                stroke: {
-                  width: 4,
+                  distance: 300,
                   color: '#ff0080',
+                  opacity: 1,
+                  width: 1,
                 },
               },
-              line_linked: {
-                enable: true,
-                distance: 300,
-                color: '#ff0080',
-                opacity: 1,
-                width: 1,
-              },
-            },
-          }}
-        />
+            }}
+          />
+        </>
         <div className="container">
           <h1 className="hero-heading">
             <span>Hello there! I am</span>

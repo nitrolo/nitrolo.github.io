@@ -29,7 +29,7 @@ function ContactBanner() {
           <h3 className="contact-banner-heading">
             Say hello to get in touch with me.
           </h3>
-          <Button btnLink="/contact" btnText="Contact now" />
+          <Button btnLink="/contacts" btnText="Contact now" />
         </div>
       </div>
     </ContactBannerStyle>

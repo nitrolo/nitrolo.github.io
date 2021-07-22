@@ -21,7 +21,7 @@ const ContactBannerStyle = styled.div`
 
 function ContactBanner() {
   return (
-    <ContactBannerStyle>
+    <ContactBannerStyle id="contacts-banner">
       <div className="container">
         <div className="contact-banner-wrapper">
           <h3 className="contact-banner-heading">

@@ -149,7 +149,7 @@ const HeroStyle = styled.div`
 
 function HeroSection() {
   return (
-    <HeroStyle>
+    <HeroStyle id="hero-section">
       <div className="hero">
         <>
           <Particles

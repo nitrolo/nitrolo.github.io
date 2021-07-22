@@ -57,7 +57,7 @@ const ProjectsSectionStyle = styled.div`
 
 function ProjectsSection() {
   return (
-    <ProjectsSectionStyle>
+    <ProjectsSectionStyle id="projects-section">
       <div className="container">
         <SectionTitle heading="Projects" subHeading="Some of my recent" />
         <div className="projects-items">

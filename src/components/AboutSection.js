@@ -89,7 +89,7 @@ const AboutSectionStyle = styled.div`
 
 function AboutSection() {
   return (
-    <AboutSectionStyle>
+    <AboutSectionStyle id="about-section">
       <div className="container">
         <div className="about-section-left">
           <SectionTitle

@@ -12,7 +12,7 @@ const SkillsSectionStyle = styled.div`
 
 function SkillsSection() {
   return (
-    <SkillsSectionStyle>
+    <SkillsSectionStyle id="skills-section">
       <div className="container">
         <SectionTitle heading="Skills" subHeading="My" />
         <div className="skill-items">

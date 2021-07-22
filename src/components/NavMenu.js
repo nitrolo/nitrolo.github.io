@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
@@ -111,8 +111,8 @@ function NavMenu() {
           <MdClose />
         </div>
         <li>
-          <NavLink
-            to="/"
+          <HashLink
+            to="#hero-section"
             exact
             onClick={() => setShowNav(!showNav)}
             role="button"
@@ -120,40 +120,51 @@ function NavMenu() {
             tabIndex={0}
           >
             Home
-          </NavLink>
+          </HashLink>
         </li>
         <li>
-          <NavLink
-            to="/about"
+          <HashLink
+            to="#about-section"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             About
-          </NavLink>
+          </HashLink>
         </li>
         <li>
-          <NavLink
-            to="/projects"
+          <HashLink
+            to="#projects-section"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             Projects
-          </NavLink>
+          </HashLink>
         </li>
         <li>
-          <NavLink
-            to="/contacts"
+          <HashLink
+            to="#skills-section"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Skills
+          </HashLink>
+        </li>
+        <li>
+          <HashLink
+            to="#contacts-banner"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
             Contacts
-          </NavLink>
+          </HashLink>
         </li>
       </ul>
     </NavMenuStyles>

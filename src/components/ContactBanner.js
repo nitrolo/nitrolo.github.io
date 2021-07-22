@@ -3,15 +3,13 @@ import styled from 'styled-components';
 import Button from './Button';
 
 const ContactBannerStyle = styled.div`
-  padding: 10rem 0;
   .contact-banner-wrapper {
-    background-color: var(--deep-dark);
     border-radius: 12px;
     padding: 5rem 0;
     text-align: center;
   }
   .contact-banner-heading {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
   @media only screen and (max-width: 768px) {

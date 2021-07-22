@@ -14,6 +14,9 @@ const ProgressBarStyle = styled.div`
     border-radius: inherit;
     text-align: right;
   }
+  @media only screen and (max-width: 768px) {
+    height: 0.4rem;
+  }
 `;
 
 function ProgressBar({ completed }) {

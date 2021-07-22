@@ -34,7 +34,7 @@ const SkillsItemStyle = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-    margin: 0;
+    margin: 0 2rem;
     .skill-item-icon {
       font-size: 5rem;
       margin: 0 3rem;

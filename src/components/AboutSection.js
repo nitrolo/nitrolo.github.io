@@ -97,7 +97,7 @@ function AboutSection() {
             heading="about me"
           />
           <p className="about-para">
-            I am a third year undergrad at BITS Pilani, Goa Campus.
+            I am a third year CS undergrad at BITS Pilani, Goa Campus.
           </p>
           <div className="about-section-buttons">
             <Button btnLink="#projects-section" btnText="Works" />

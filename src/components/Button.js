@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 
 const ButtonStyle = styled.div`
@@ -24,9 +25,9 @@ const ButtonStyle = styled.div`
 function Button({ btnLink = 'Link', btnText = 'Button', fill = true }) {
   return (
     <ButtonStyle fill={fill} className="button-wrapper">
-      <Link className="button" to={btnLink}>
+      <HashLink className="button" to={btnLink}>
         {btnText}
-      </Link>
+      </HashLink>
     </ButtonStyle>
   );
 }

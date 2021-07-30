@@ -200,7 +200,7 @@ function HeroSection() {
               backSpeed={60}
               loop
             />
-            <Button btnLink="/contacts" btnText="Contact me" />
+            <Button btnLink="/#contacts-banner" btnText="Contact me" />
           </div>
           <div className="hero-social">
             <div className="hero-social-indicator">

@@ -100,8 +100,7 @@ function AboutSection() {
             I am a third year undergrad at BITS Pilani, Goa Campus.
           </p>
           <div className="about-section-buttons">
-            <Button btnLink="/projects" btnText="Works" />
-            <Button btnLink="/about" btnText="Read More" fill={false} />
+            <Button btnLink="#projects-section" btnText="Works" />
           </div>
         </div>
         <div className="about-section-right">

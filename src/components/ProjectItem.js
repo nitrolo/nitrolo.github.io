@@ -11,9 +11,6 @@ const ProjectItemStyle = styled.div`
     border-radius: 12px;
     display: inline-block;
     border: 3px solid var(--gray-2);
-    img {
-      height: 100vh;
-    }
   }
   .project-item-info {
     margin-top: 1rem;

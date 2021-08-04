@@ -40,13 +40,11 @@ function ProjectItem({
 }) {
   return (
     <ProjectItemStyle>
-      <Link to="/projects" className="project-item-img">
+      <div className="project-item-img">
         <img src={img} alt="project img" />
-      </Link>
+      </div>
       <div className="project-item-info">
-        <Link to="#">
-          <h3 className="project-item-title">{title}</h3>
-        </Link>
+        <h3 className="project-item-title">{title}</h3>
         <p className="project-item-desc">{desc}</p>
       </div>
     </ProjectItemStyle>
